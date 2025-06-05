@@ -35,5 +35,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=gcnam-web-dev-assignment
+            -Dsonar.projectKey=Beauniah_gcnam-web-dev-assignment
             -Dsonar.organization=violin
+
