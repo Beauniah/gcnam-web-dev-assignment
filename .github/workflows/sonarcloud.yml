@@ -36,4 +36,4 @@ jobs:
         with:
           args: >
             -Dsonar.projectKey=gcnam-web-dev-assignment
-            -Dsonar.organization=Beauniah
+            -Dsonar.organization=violin
