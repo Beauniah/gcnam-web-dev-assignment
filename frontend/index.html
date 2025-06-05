@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GCNam Web Dev Assignment</title>
+</head>
+<body>
+  <h2>Unit Rate Checker</h2>
+
+  <form id="rateForm">
+    <label>
+      Unit Name:
+      <input type="text" id="unitName" required />
+    </label>
+    <br />
+
+    <label>
+      Arrival Date (DD/MM/YYYY):
+      <input type="text" id="arrival" placeholder="05/06/2025" required />
+    </label>
+    <br />
+
+    <label>
+      Departure Date (DD/MM/YYYY):
+      <input type="text" id="departure" placeholder="07/06/2025" required />
+    </label>
+    <br />
+
+    <label>
+      Occupants:
+      <input type="number" id="occupants" min="1" required />
+    </label>
+    <br />
+
+    <label>
+      Ages (comma-separated):
+      <input type="text" id="ages" placeholder="30,10" required />
+    </label>
+    <br /><br />
+
+    <button type="submit">Check Rates</button>
+  </form>
+
+  <h3>Response:</h3>
+  <pre id="result"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
