@@ -15,7 +15,7 @@ if (!$data || !isset($data["Ages"])) {
     exit;
 }
 
-// Build guests array
+// Build guests array test
 $guests = array_map(function ($age) {
     return ["Age Group" => mapAgeGroup($age)];
 }, $data["Ages"]);
