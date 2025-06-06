@@ -5,9 +5,7 @@ document.getElementById("rateForm").addEventListener("submit", async function (e
   const arrival = document.getElementById("arrival").value;
   const departure = document.getElementById("departure").value;
   const occupants = parseInt(document.getElementById("occupants").value);
-  const ages = document.getElementById("ages").value
-    .split(",")
-    .map(age => parseInt(age.trim()));
+  const ages = document.getElementById("ages").value.split(",").map(age => parseInt(age.trim()));
 
   const payload = {
     "Unit Name": unitName,
@@ -18,7 +16,7 @@ document.getElementById("rateForm").addEventListener("submit", async function (e
   };
 
   try {
-    const response = await fetch("/backend/api.php", {
+    const response = await fetch("https://scaling-barnacle-6wgg4gp4wrv245r5-8000.app.github.dev/api.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

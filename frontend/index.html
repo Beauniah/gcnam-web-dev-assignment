@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GCNam Web Dev Assignment</title>
+  <meta charset="UTF-8">
+  <title>Unit Rate Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    input, button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1em;
+    }
+    button {
+      background: #007acc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005f99;
+    }
+    #result {
+      white-space: pre-wrap;
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
-  <h2>Unit Rate Checker</h2>
-
+  <h1>Unit Rate Checker</h1>
   <form id="rateForm">
-    <label>
-      Unit Name:
-      <input type="text" id="unitName" required />
-    </label>
-    <br />
-
-    <label>
-      Arrival Date (DD/MM/YYYY):
-      <input type="text" id="arrival" placeholder="05/06/2025" required />
-    </label>
-    <br />
-
-    <label>
-      Departureee Date (DD/MM/YYYY):
-      <input type="text" id="departure" placeholder="07/06/2025" required />
-    </label>
-    <br />
-
-    <label>
-      Occupants:
-      <input type="number" id="occupants" min="1" required />
-    </label>
-    <br />
-
-    <label>
-      Ages (comma-separated):
-      <input type="text" id="ages" placeholder="30,10" required />
-    </label>
-    <br /><br />
-
+    <input type="text" id="unitName" placeholder="Unit Name (e.g., Etosha)" required>
+    <input type="text" id="arrival" placeholder="Arrival Date (DD/MM/YYYY)" required>
+    <input type="text" id="departure" placeholder="Departure Date (DD/MM/YYYY)" required>
+    <input type="number" id="occupants" placeholder="Occupants" required>
+    <input type="text" id="ages" placeholder="Ages (comma-separated)" required>
     <button type="submit">Check Rates</button>
   </form>
 
   <h3>Response:</h3>
-  <pre id="result"></pre>
+  <div id="result">...</div>
 
   <script src="script.js"></script>
 </body>

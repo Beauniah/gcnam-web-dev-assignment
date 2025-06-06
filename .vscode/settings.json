@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "mySonarCubeConnection",
+        "projectKey": "Beauniah_gcnam-web-dev-assignment"
+    }
+}
